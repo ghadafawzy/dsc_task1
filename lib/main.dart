@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     isPassword: true, mycontroller: passwordController),
                 SizedBox(height: 20,),
                 CustomTextField(text: 'Confirm Password', icon: Icon(Icons.key,color: Colors.deepPurple), type: TextInputType.number,
-                    isPassword: false, mycontroller: confirmController),
+                    isPassword: true, mycontroller: confirmController),
                 SizedBox(height: 20,),
                 CustomButton(text: 'Register', width: double.infinity, height: 55, color: Colors.deepPurple,
                     textColor: Colors.white, size: 18, onChange: (){}),
@@ -99,7 +99,7 @@ class CustomPath extends CustomClipper<Path> {
     Path path = Path();
     path.moveTo(0, 0);
     path.lineTo(0, h);
-    path.quadraticBezierTo(w*0.50, h*0.20, w*0.50, h*0.77);
+    path.quadraticBezierTo(w*0.39, h*0.98, w*0.50, h*0.77);
     path.quadraticBezierTo(w*0.72, h*0.61, w, h);
 
     path.lineTo(w, 0);
